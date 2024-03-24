@@ -1,0 +1,210 @@
+.outer-in img{
+    width: 34%;
+    height: 450px;
+    position: fixed;
+}
+.outer-in {
+    overflow-y: scroll;
+    width: 70%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 51% 49%;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: fixed;
+    box-shadow: 3px 2px 8px 8px #878282;
+}
+
+.outer-in form input{
+
+    padding: 10px;
+    margin-left: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(142, 139, 139);
+
+}
+
+.outer-in div:first-child{
+    margin-bottom: 10px;
+}
+
+.outer-in form { 
+    height: 800px;
+    padding: 10px;
+    margin: 10px; 
+}
+
+.outer-in form h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+
+}
+
+.outer-in form span{
+    font-size: 15px;
+}
+
+.outer-in form input[type="checkbox"],input[type="radio"]{
+    margin: 3px 20px 3px 20px;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 5px;
+}
+.outer-in form input[type="date"],input[type="time"]{
+    width: 25%;
+}
+
+.outer-in form select{
+    border: 1px solid rgb(121, 118, 118);
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    position: fixed;
+    top : 86%;
+    left: 28%;
+}
+
+.btn button{
+    background-color: rgb(113, 173, 240);
+    color: beige;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 35px;
+    font-size: larger;
+}
+
+.btn button:first-child:hover{
+    background-color: rgb(230, 230, 101);
+}
+.btn button:last-child:hover{
+    background-color:rgb(92, 153, 92) ;
+}
+
+
+/* Styles for screen sizes up to 700px */
+@media (max-width: 700px) {
+    .outer-in form input{
+
+        padding: 5px;
+        margin-left: 5px;
+        width: 85%;
+    
+    }
+    
+    .outer-in form { 
+        height: 800px;
+        padding: 10px;
+        margin: 10px; 
+    }
+    
+    .outer-in form h2{
+        font-size: 14px;
+    
+    }
+    
+    .outer-in form span{
+        font-size: 12px;
+    }
+    
+    .outer-in form input[type="checkbox"],.outer-in form input[type="radio"]{
+        margin: 0;
+        width: 10px;
+        height: 10px;
+        margin-bottom: 5px;
+    }
+    .outer-in form input[type="date"],.outer-in form input[type="time"]{
+        width: 100%;
+    }
+    
+    
+    .btn{
+        position: fixed;
+        top : 56%;
+        left: 14%;
+    }
+    
+    .btn button{
+        background-color: rgb(113, 173, 240);
+        color: beige;
+        padding: 4px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    
+    .btn button:first-child:hover{
+        background-color: rgb(230, 230, 101);
+    }
+    .btn button:last-child:hover{
+        background-color:rgb(92, 153, 92) ;
+    }
+    
+}
+
+
+/* Styles for screen sizes up to 700px */
+@media (max-width: 800px) {
+    .outer-in form input{
+
+        padding: 5px;
+        margin-left: 0px;
+        width: 85%;
+    
+    }
+    
+    .outer-in form { 
+        height: 800px;
+        padding: 10px;
+        margin: 10px; 
+    }
+    
+    .outer-in form h2{
+        font-size: 14px;
+    
+    }
+    
+    .outer-in form span{
+        font-size: 12px;
+    }
+    
+    .outer-in form input[type="checkbox"],.outer-in form input[type="radio"]{
+        margin: 0;
+        width: 10px;
+        height: 10px;
+        margin-bottom: 5px;
+    }
+    .outer-in form input[type="date"],.outer-in form input[type="time"]{
+        width: 100%;
+    }
+    
+    
+    .btn{
+        top : 75%;
+        left: 14%;
+    }
+    
+    .btn button{
+        background-color: rgb(113, 173, 240);
+        color: beige;
+        padding: 4px 10px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    
+    .btn button:first-child:hover{
+        background-color: rgb(230, 230, 101);
+    }
+    .btn button:last-child:hover{
+        background-color:rgb(92, 153, 92) ;
+    }
+    
+}

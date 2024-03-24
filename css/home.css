@@ -1,0 +1,259 @@
+/* LET THE STYLING BEGIN */
+body {
+    margin: 0%;
+}
+
+/*
+    CSS for the header
+*/
+
+.top-mar {
+    padding-top: 117px;
+}
+
+.header-div {
+    position: fixed;
+    width: 100%;
+}
+
+header h1 {
+    background-color: rgb(72, 70, 70);
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: blanchedalmond;
+}
+
+.header-div nav {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    background-color: rgba(56, 55, 55, 0.7);
+    ;
+}
+
+.menu li:nth-child(2):hover #Dropdown_1,
+.menu li:nth-child(3):hover #Dropdown_2 {
+    display: block;
+}
+
+#Dropdown_1,
+#Dropdown_2 {
+    position: absolute;
+    width: auto;
+    min-width: 120px;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: rgb(237, 227, 227);
+    padding: 0%;
+}
+
+#Dropdown_1 li,
+#Dropdown_2 li {
+    display: block;
+}
+
+#Dropdown_1 li:hover,
+#Dropdown_2 li:hover {
+    background-color: rgb(225, 213, 213);
+}
+
+#Dropdown_1 li a,
+#Dropdown_2 li a {
+    color: rgb(92, 142, 183);
+    font-size: 16px;
+}
+
+/*
+    CSS for animation of image
+*/
+.slideshow {
+    border: 2px steelblue solid;
+    margin: 2px;
+    height: 60vh;
+    width: calc(100%-8px);
+    background-image: url(images/Animation/ani1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 5s;
+
+    animation: animate 30s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(../images/Animation/ani1.jpg);
+    }
+
+    20% {
+        background-image: url(../images/Animation/ani3.jpg);
+    }
+
+    40% {
+        background-image: url(../images/Animation/ani2.png);
+    }
+
+    60% {
+        background-image: url(../images/Animation/ani4.jpg);
+    }
+
+    80% {
+        background-image: url(../images/Animation/ani5.jpg);
+    }
+
+    100% {
+        background-image: url(../images/Animation/ani1.jpg);
+    }
+}
+
+/*
+    Style for the card
+*/
+.card-container {
+    width: 100%;
+    /* marign:20px*/
+
+}
+
+.card-div {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+}
+
+.card {
+    background-color: #eef0e6;
+    margin: 0px 10px;
+    border: #eef0e6 1px solid;
+    border-radius: 10px;
+}
+
+.outer {
+    margin: 5px;
+    padding: 10px;
+}
+
+.card .content {
+    padding: 10px;
+}
+
+.card h4 {
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card .content p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(67, 170, 234);
+    font-size: 12px;
+
+}
+
+.card .content button {
+    text-align: center;
+    width: 84%;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgb(253, 247, 247);
+    color: #f59107;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: #7571eb 1px solid;
+    border-radius: 5px;
+}
+
+.card .content button:hover {
+    border: green 1px solid;
+    background-color: greenyellow;
+}
+
+.card .content a:hover {
+    background-color: #dbd7d2;
+}
+
+.card img {
+    width: 95%;
+    height: 120px;
+    margin: 0 5px 0 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.card-div>:hover {
+    background-color: #c2bfbd;
+}
+
+
+/* Styles for screen sizes up to 700px */
+@media (max-width: 800px) {
+
+    .menu li a {
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    #Dropdown_1,
+    #Dropdown_2 {
+        max-width: 150px;
+        min-width: 50px;
+    }
+
+    #Dropdown_1 li a,
+    #Dropdown_2 li a {
+        font-size: 12px;
+    }
+
+    .slideshow {
+        height: 30vh;
+        /* Reduce height of the slideshow for smaller screens */
+    }
+
+    .card-div {
+        grid-template-columns: 50% 50%;
+        /* Stack cards vertically for smaller screens */
+    }
+
+    .card {
+        width: calc(100% - 20px);
+        /* Take up full width with margin */
+        margin: 10px;
+        /* Add margin around each card */
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}

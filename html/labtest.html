@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Test</title>
+
+    <link rel="stylesheet" href="../css/labtest.css" />
+   
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="outer-in">
+            <div>
+                <form id="myForm">
+                    <div>
+                        <h2>1. Your Contact details</h2>
+                        <input type="text" id="name" placeholder="First Name" />
+                        <input type="text" id="id" placeholder="Patient id if exists" />
+                        <br><br>
+                        <input type="text" id="id" placeholder="Contact Number" />
+                        <input type="email" id="id" placeholder="Email id" />
+                        <h2>2. Address</h2>
+                        <input type="text" id="hno" placeholder="H-No" />
+                        <input type="text" id="street" placeholder="Street" />
+                        <br><br>
+                        <input type="text" id="area" placeholder="Area" />
+                        <br><br>
+                        <span><b>District</b></span> <br />
+                        <br>
+                        <select id="district">
+                            <option hidden>Choose...</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Tirupathur">Tirupathur</option>
+                            <option value="Salem">Salem</option>
+                            <option value="Madurai">Madurai</option>
+                            <option value="Erode">Erode</option>
+                            <option value="Kanchipuram">Kanchipuram</option>
+                            <option value="Kovai">Kovai</option>
+                            <option value="Vellore">Vellore</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                        </select>
+                        <h2>3. Choose the test type</h2>
+                        <input type="checkbox" name="test" value="CBC" /> CBC <br>
+                        <input type="checkbox" name="test" value="Complete Urine" /> <span>Complete Urine</span> <br>
+                        <input type="checkbox" name="test" value="Lipid Products" /> <span>Lipid Profile</span> <br>
+                        <input type="checkbox" name="test" value="Thyroid Stimulating Hormone" /> <span>Thyroid Stimulating
+                            Hormone</span> <br>
+                        <input type="checkbox" name="test" value="Glucose Test" /> <span>Glucose Test</span>
+                        <h2>4. Do you want hard copy of report</h2>
+                        <input type="radio" name="copy" value="y" /><span>  Yes</span>
+                        <input type="radio" name="copy" value="n" /><span>  No</span>
+                        <h2>5. Select your comfortable time and date</h2>
+                        <input type="date" name="date"/><br>
+                        <input type="time" name="time" /><br>
+                    </div>
+                </form>
+            </div>
+            <div class="img">
+                <img src="../images/Lab-Test/lab-test.jpg" class="" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="reset" type="reset" id="resetButton" onclick="resetForm()">Reset</button>
+        <button class="submit" type="submit" id="submitButton" onclick="submitForm()" >Submit</button>
+    </div>
+
+</body>
+
+</html> 
+<script>
+    // Get reference to the form and buttons
+    const form = document.getElementById('myForm');
+    const submitButton = document.getElementById('submitButton');
+    const resetButton = document.getElementById('resetButton');
+
+    // Function to submit the form
+    function submitForm() {
+        form.submit(); // Submit the form
+    }
+
+    // Function to reset the form
+    function resetForm() {
+        form.reset(); // Reset the form
+    }
+
+
+</script>
